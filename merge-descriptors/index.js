@@ -17,7 +17,9 @@ function merge (dest, src, redefine) {
     redefine = true
   }
 
-  Object.getOwnProperty(src).forEach(function forEachOwnPropertyName(name) {
+  // Object.getOwnPropertyNames(src).concat(Object.getOwnPropertySymbols(src))
+  // Reflect.ownKeys(src)
+  Object.getOwnPropertyNames(src).forEach(function forEachOwnPropertyName(name) {
     if (!redefine && hasOwnProperty.call(dest, name)) {
       // 如果不同重新定义
       return
