@@ -49,6 +49,8 @@ mixin(target, src, false) // arget = {name: 'Tom', age: '24', country: 'America'
 ## 缺陷
 Object.getOwnPropertyNames方法只能获取到对象上非symbol类型的属性名称，所以在源对象上存在symbol类型的值时，是无法并入到目标对象上的
 
+  ps.也可能是express框架本身并不需要对Symbol属性进行处理，不过修改后并不影响express功能
+
 ### 修改方式
   Object.getOwnPropertyNames(src).concat(Object.getOwnPropertySymbols(src))
   或者
