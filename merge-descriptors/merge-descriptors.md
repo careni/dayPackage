@@ -23,7 +23,7 @@ var src = {
   age: '25'
 }
 mixin(target, src) // target = {name: 'Tom', age: '25', country: 'America', job: 'doctor'}
-mixin(target, src) // arget = {name: 'Tom', age: '24', country: 'America', job: 'doctor'}
+mixin(target, src, false) // arget = {name: 'Tom', age: '24', country: 'America', job: 'doctor'}
 ```
 
 ## 相关API
