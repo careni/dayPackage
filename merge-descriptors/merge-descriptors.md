@@ -1,8 +1,13 @@
 # 并入函数
 
+## 来源
+express框架的依赖包
+
 ## 参数
   1.目标对象
+
   2.并入源对象
+
   3.是否重新定义目标对象与并入源对象的相同部分(默认为true)
 
 ## 使用方式
@@ -22,4 +27,10 @@ mixin(target, src) // arget = {name: 'Tom', age: '24', country: 'America', job: 
 ```
 
 ## 相关API
-getOwnProperty,hasOwnProperty,getOwnPropertyDescriptor,defineProperty
+1.getOwnProperty
+
+2.hasOwnProperty
+
+3.getOwnPropertyDescriptor
+
+4.defineProperty
