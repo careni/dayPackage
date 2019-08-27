@@ -27,7 +27,7 @@ obj.speak() // 'Hello,World'
 module.exports = Object.setPrototypeOf || ({ __proto__: [] } instanceof Array ? setProtoOf : mixinProperties)
 ```
 
-‘{ __proto__: [] } instanceof Array’的意思是为检测当前环境中，‘__proto__’属性是否被支持。因为‘__proto__’并不是标准属性，在IE中是不支持的，应当调用Object.getPrototypeOf()获取对象的原型。所以才会有setProtoOf和mixinProperties两种方法
+‘{ \_\_proto\_\_: [] } instanceof Array’的意思是为检测当前环境中，‘\_\_proto\_\_’属性是否被支持。因为‘\_\_proto\_\_’并不是标准属性，在IE中是不支持的，应当调用Object.getPrototypeOf()获取对象的原型。所以才会有setProtoOf和mixinProperties两种方法
 
 ## 缺陷
 调用Object.setPrototypeOf是非常耗时的，在各个浏览器和javascript引擎中，更改原型都是复杂缓慢的操作。如果更关心性能的话就应该避免使用改方法，转而使用Object.create方法创建带有某个原型对象的新对象。
