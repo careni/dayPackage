@@ -12,9 +12,9 @@ express框架的依赖包
 ```javascript
 const flat = require('array-flatten')
 var array = [1, 2, [3,4], [5,[6, [7, 8]]]]
-flag(array) // 全部展开 [1, 2, 3, 4, 5, 6, 7, 8]
-flag(array, Infinity) //全部展开 [1, 2, 3, 4, 5, 6, 7, 8]
-flag(array, 2) // 展开深度为2 [1, 2, 3, 4, 5, 6, [7, 8]]
+flat(array) // 全部展开 [1, 2, 3, 4, 5, 6, 7, 8]
+flat(array, Infinity) //全部展开 [1, 2, 3, 4, 5, 6, 7, 8]
+flat(array, 2) // 展开深度为2 [1, 2, 3, 4, 5, 6, [7, 8]]
 ```
 
 ## 相关API

@@ -13,7 +13,7 @@ function flattenWithDepth (array, result, depth) {
   return result
 }
 
-// 完整展开素组
+// 完整展开数组
 function flattenForever (array, result) {
   for (var i = 0; i < array.length; i++) {
     var value = array[i]
