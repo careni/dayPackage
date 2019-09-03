@@ -33,7 +33,7 @@ express框架的依赖包
   >是否允许javascript操作cookie
 
   9.SameSite
-  >是否允许携带cookie，有两个可选值Strict，Lax。Strict模式下任何请求都不允许携带cookie，Lax模式下一些安全的Http请求可以携带，例如<a>,<link>, <form get>这些，想ajax，post，<img>都是不可携带的
+  >是否允许携带cookie，有两个可选值Strict，Lax。Strict模式下任何请求都不允许携带cookie，Lax模式下一些安全的Http请求可以携带，例如'<a>','<link>', '<form get>'这些，想ajax，post，<img>都是不可携带的
 
 ## cookie的拼接
 根据以上的讲解我们可以拼接一个如下的字符串
